@@ -15,17 +15,18 @@ typedef struct {
 extern File files[MAX_FILES];
 extern int file_count;
 
-// Function declarations — Member 1
+// Function declarations
 void start_shell();
 void help();
 void parse_command(char *input);
 
-// Function declarations — Member 2
+// Function declarations
 void list();
 void create(char *name, char *dir);
 void move_file(char *name, char *new_dir);
+void search(char *keyword);
 
-// Function declarations — Member 3
+// Function declarations
 void rename_file(char *old_name, char *new_name);
 void delete_file(char *name);
 

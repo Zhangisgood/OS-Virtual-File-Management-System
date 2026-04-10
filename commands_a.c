@@ -53,3 +53,20 @@ void move_file(char *name, char *new_dir) {
     }
     printf("Error: file '%s' not found.\n", name);
 }
+
+// Search files by keyword
+void search(char *keyword) {
+    int found = 0;
+    printf("\n%-5s %-20s %-20s\n", "ID", "Name", "Directory");
+    printf("----------------------------------------------\n");
+    for (int i = 0; i < file_count; i++) {
+        if (strstr(files[i].name, keyword) != NULL) {
+            printf("%-5d %-20s %-20s\n", i + 1, files[i].name, files[i].directory);
+            found++;
+        }
+    }
+    if (found == 0) {
+        printf("No files found matching '%s'.\n", keyword);
+    }
+    printf("\n");
+}

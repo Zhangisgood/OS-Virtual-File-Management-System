@@ -79,6 +79,12 @@ void parse_command(char *input) {
         } else {
             move_file(arg1, arg2);
         }
+    } else if (strcmp(cmd, "search") == 0) {
+        if (strlen(arg1) == 0) {
+            printf("Usage: search <keyword>\n");
+        } else {
+            search(arg1);
+        }
     } else {
         printf("Unknown command: '%s'. Type 'help' for available commands.\n", cmd);
     }
@@ -92,6 +98,7 @@ void help() {
     printf("  delete <name>            Delete a file\n");
     printf("  rename <old> <new>       Rename a file\n");
     printf("  move   <name> <dir>      Move a file to a new directory\n");
+    printf("  search <keyword>         Search files by keyword\n");
     printf("  help                     Show this help message\n");
     printf("  exit                     Exit the system\n");
     printf("--------------------------\n\n");
