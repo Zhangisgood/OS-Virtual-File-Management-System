@@ -16,8 +16,8 @@ This program simulates a basic OS file management environment. Users interact wi
 OS-Virtual-File-Management-System/
 ├── shell.h          — Data structures and function declarations
 ├── main.c           — Main loop, command parsing, help command
-├── commands_a.c     — list, create, move commands
-├── commands_b.c     — rename, delete commands and error handling
+├── commands_a.c     — list, create, move, search, count commands
+├── commands_b.c     — rename, delete, clear commands and error handling
 └── README.md        — Project documentation
 ```
 
@@ -32,6 +32,9 @@ OS-Virtual-File-Management-System/
 | delete | `delete <filename>` | Delete a file |
 | rename | `rename <old_name> <new_name>` | Rename a file |
 | move | `move <filename> <new_directory>` | Move a file to a new directory |
+| search | `search <keyword>` | Search files by keyword |
+| count | `count` | Show total number of files |
+| clear | `clear` | Delete all files |
 | help | `help` | Show all available commands |
 | exit | `exit` | Exit the system |
 
