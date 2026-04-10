@@ -26,6 +26,7 @@ void create(char *name, char *dir);
 void move_file(char *name, char *new_dir);
 void search(char *keyword);
 void count();
+void clear_files();
 
 // Function declarations
 void rename_file(char *old_name, char *new_name);

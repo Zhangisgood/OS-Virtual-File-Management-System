@@ -87,6 +87,8 @@ void parse_command(char *input) {
         }
     } else if (strcmp(cmd, "count") == 0) {
         count();
+    } else if (strcmp(cmd, "clear") == 0) {
+        clear_files();
     } else {
         printf("Unknown command: '%s'. Type 'help' for available commands.\n", cmd);
     }
@@ -102,6 +104,7 @@ void help() {
     printf("  move   <name> <dir>      Move a file to a new directory\n");
     printf("  search <keyword>         Search files by keyword\n");
     printf("  count                    Show total number of files\n");
+    printf("  clear                    Delete all files\n");
     printf("  help                     Show this help message\n");
     printf("  exit                     Exit the system\n");
     printf("--------------------------\n\n");

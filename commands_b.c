@@ -37,3 +37,9 @@ void delete_file(char *name) {
     }
     printf("Error: file '%s' not found.\n", name);
 }
+
+// Clear all files
+void clear_files() {
+    file_count = 0;
+    printf("All files have been cleared.\n");
+}
