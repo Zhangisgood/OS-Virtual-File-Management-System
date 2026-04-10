@@ -100,10 +100,3 @@ Goodbye!
 | VS Code | Code editor |
 | GCC | C compiler |
 | Git + GitHub | Version control |
-
----
-
-## Course Information
-
-**Course:** CSYE6230 Operating Systems  
-**Project:** Final Project — Virtual File Management OS
