@@ -70,3 +70,8 @@ void search(char *keyword) {
     }
     printf("\n");
 }
+
+// Count total number of files
+void count() {
+    printf("Total files: %d\n", file_count);
+}

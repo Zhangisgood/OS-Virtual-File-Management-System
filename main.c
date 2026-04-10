@@ -85,6 +85,8 @@ void parse_command(char *input) {
         } else {
             search(arg1);
         }
+    } else if (strcmp(cmd, "count") == 0) {
+        count();
     } else {
         printf("Unknown command: '%s'. Type 'help' for available commands.\n", cmd);
     }
@@ -99,6 +101,7 @@ void help() {
     printf("  rename <old> <new>       Rename a file\n");
     printf("  move   <name> <dir>      Move a file to a new directory\n");
     printf("  search <keyword>         Search files by keyword\n");
+    printf("  count                    Show total number of files\n");
     printf("  help                     Show this help message\n");
     printf("  exit                     Exit the system\n");
     printf("--------------------------\n\n");
